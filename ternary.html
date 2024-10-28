@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator Ternary</title>
+</head>
+<body>
+    <p>Versi singkat dari if statement</p>
+    <p id="display"></p>
+    
+    <script>
+
+        //if statement yang biasa
+        const nilai = 70;
+        let ucapan;
+
+        if(nilai >= 75){
+            ucapan = "Selamat anda lulus" ;
+        }else{
+            ucapan = "Coba lagi lain kali";
+        }
+        document.getElementById("display").innerHTML = ucapan;
+
+        //memakai ternary operator
+        const kelulusan = nilai >= 75? "Selamat anda lulus" : "Coba lagi tahun depan";
+        document.writeln(`<p>${kelulusan}</p>`)
+    </script>
+</body>
+</html>
