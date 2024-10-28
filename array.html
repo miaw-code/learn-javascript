@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+
+    <h2>Array</h2>
+    <p>Array di dalam javascript itu bisa diisi berapapun, di bahasa pemograman lain, kita harus menetapkan panjang array nya</p>
+
+    <script>
+    let arrayKosong = [];
+    let arrayNama = ["Akbar", "Rafsanjani", "Satu", "Dua", 1, true];
+    
+    //menambah data array dengan operasi push()
+    arrayKosong.push("data1");
+    arrayKosong.push("data2");
+    arrayKosong.push("data3");
+
+    
+    document.writeln(arrayNama[5]);
+    console.table(arrayKosong);
+
+    //mendapatkan panjang array
+    console.info(arrayKosong.length)
+    
+    //ganti data array
+    arrayKosong[0] = "Ganti Data 1";
+    console.info(arrayKosong[0]);
+    arrayKosong.push(["one","two","three"]);
+    console.table(arrayKosong);
+
+    </script>
+    
+</body>
+</html> 

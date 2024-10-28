@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi string dan number</title>
+</head>
+<body>
+
+    <script>
+        let value1 = "1";
+        let value2 = 1;
+        let sum = parseInt(value1) + value2;
+
+        document.writeln(`<p>${sum}</p>`);
+        
+        document.writeln(`<p>${parseInt("1.1")}</p>`); //bil bulat
+        document.writeln(`<p>${parseFloat("1.1")}</p>`); // pecahan
+        document.writeln(`<p>${Number("1.1")}</p>`); //keduanya
+
+        let a = 1;
+        let b = 1;
+
+        let c = a.toString() + b.toString();
+        document.writeln(c); //hasilnya 11
+
+        // NaN (not a number)
+        //NaN kalau di lakukan operasi apapun, hasilnya akan menjadi NaN
+        document.writeln(`<p>${parseInt("1salah")}</p>`); 
+        document.writeln(`<p>${parseFloat("1.1salah")}</p>`); 
+        document.writeln(`<p>${Number("1.1text")}</p>`); //number tidak bisa mentolerir kesalahan sedikitpun
+
+        let d = Number("salah");
+        document.writeln(`<p>${isNaN(d)}</p>`);
+
+
+    </script>
+    
+</body>
+</html> 
